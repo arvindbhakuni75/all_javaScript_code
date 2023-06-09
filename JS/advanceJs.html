@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>    // OOPs in JavaScript/////////////////////////
+
+
+                         // Constructor Function 
+
+    // function BankAccount (username, bls = 3000) {   
+    //     this.name = username,
+    //     this.account = Date.now(),
+    //     this.balance = bls
+
+    //     this.deposit = function (amount) {
+    //         this.balance += amount
+    //     },
+        
+    //     this.widrow = amount => 
+    //         this.balance -= amount
+        
+    // }
+
+    // const Abhinav = new BankAccount('Abhinav', 5000)
+    // const vijay = new BankAccount('Vijay')
+    // const akansh = new BankAccount("Akansh")
+    // const shishu = new BankAccount("Shishu", -10000)
+    
+    // console.log(Abhinav, vijay)
+    // vijay.deposit(700)
+    // vijay.widrow(200)
+    // console.log(vijay.balance)
+
+    // akansh.deposit(5000000)
+    // akansh.widrow(3000)
+    // console.log(akansh)
+    // console.log(akansh.balance)
+    // console.log(shishu)
+
+
+                    // Prototype /////////////////
+
+    // const BankAcc = function(name, bls = 100) {
+    //     this.name = name,
+    //     this.account = Date.now(),
+    //     this.balance = bls
+
+        // this.deposit = (amount) => {
+        //     balance += amount
+        // },
+
+        // this.widtow = (amount) => {
+        //     balance -= amount
+        // }
+    //}
+
+
+    //  BankAcc.prototype.deposit = function (amount) {
+    //     this.balance += amount
+    //  }
+
+    //  BankAcc.prototype.widrow = function (amount) {
+    //     this.balance -= amount
+    //  }
+
+    //  const Vikram = new BankAcc("Vikram")
+
+    //  Vikram.deposit(50)
+    //  console.log(Vikram)
+
+    //  const arr = [1,2,3]
+    //  console.log(arr)
+
+
+    //  const obj = {
+    //     name: "arvind",
+    //     age: function () {
+    //         let x = 24
+    //         console.log(x)
+    //     }
+    //  }
+
+    //  obj.age()
+
+
+                // Classes In javaScript ///////////////////////
+
+        // class BackAccount {
+
+        //     constructor (uname, bls = 0) {
+        //         this.userName = uname;
+        //         this.account = Date.now();
+        //         this.balance = bls
+        //     }
+
+        //     deposit(amount) {
+        //         this.balance += amount
+        //     }
+
+        //     widrow (amount) {
+        //         this.balance -= amount
+        //     }    
+        // }
+
+        // const ravi = new BackAccount('Ravi', 200);
+        // ravi.deposit(250);
+        // ravi.widrow(20);
+        // console.log(ravi);  
+
+        // confirm("Are you sure");
+
+
+
+
+
+        //  #######   Call, Apply, Bind In JavaScript ////////////////////////////////////////////
+
+        // const student = {
+        //     fname: "Ravi",
+        //     lname: "Kumar", 
+        // }
+
+        // const teacher = {
+        //     fname: "Arvind",
+        //     lname: "Bhakuni", 
+        // }
+
+        // function getemail(city, state){
+        //     console.log(`${this.fname}_${this.lname}.gmail ${city} ${state}`)
+        // }
+
+        // call method takes an object in first argument 
+        // getemail.call(teacher, "Almora", "Uttarakhand")  // Call method takes another perams individualy ///////
+
+        // apply method takes an object in first argument 
+        // getemail.apply(student, ["Noida", "UP"])  // apply method takes second argument as an array ///
+
+
+        // bind method 
+        // getemail.bind(teacher, "Someshwar", "Almora")
+        // console.log(newbind)
+        // newbind()
+
+        // console.log(student)
+        // console.log(teacher)
+
+        
+        
+
+
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // Promise ##############################################
+
+        // let data = 1;
+        // console.log(data);
+        // data = 2;
+        // let p = new Promise(()=>{
+        //     setTimeout(() => {
+        //     console.log('timmer' , data);
+        // }, 2000);
+        // })
+            
+
+        // data = 3;
+        // console.log(data)
+
+        // let data = new Promise((resolve, rezect) => {
+        //     setTimeout(()=> {
+        //         resolve(10)
+        //     }, 1000);
+        // })
+
+        // data.then((item) => {
+        //     console.log('first', item)
+        //     return item*10;
+        // }).then((item) => {
+        //     console.log('second', item)
+        //     return item*10;
+        // }).then((item) => {
+        //     console.log('second', item)
+        // }).catch((err) => {
+        //     console.log(err)
+        // })
+
+        // let data = fetch("https://jsonplaceholder.typicode.com/users");
+        
+        // data.then((item) => {
+        //     return item.json()
+        // }).then((result) => {
+        //     console.log("second Output", result)
+        // })
+
+        //  Array ###########################################################################
+
+        //let arr1 = ["Arvind", "Raghav", "Mayank"]
+        // arr1.map((item)=> {
+        //     console.log(item)
+        // })
+
+        // console.log(arr1[arr1.length-3])
+
+        // for(let i = 0; i < arr1.length; i++) {
+        //     console.log(arr1[i])
+        // }
+        // for(let a in arr1 ){
+        //     console.log(a)
+        // }
+        // for (let a of arr1) {
+        //     console.log(a)
+        // }
+        
+        // arr1.forEach(function (element, index, array) {
+        //     console.log(element + " index value " + index + " array " + array)
+        // })
+        
+        // arr1.forEach((element, index, array) => {
+        //     console.log(element, index, array)
+        // })
+
+         // Array Destructuring //////////////////////////////////////////////
+
+
+        // let a = ["Mumbai", "Delhi", "Noida", "Bengluru"];
+
+        // let [x, y, z, ...city] = a;
+        // console.log(x, z)
+        // console.log(city)
+
+        // Object Destructuring ///////////////////////////////////////////
+
+        //let user = {name: "Arvind", email: "arvindbhakuni75@gmail.com", mobile: 7505499286}
+
+        // let {mobile, name, email} = user;
+        // console.log(mobile)
+        // console.log(name)
+        // console.log(email)
+
+        // let {name,...email} = user;
+        // console.log(email)
+
+        // Spread Operator #######################################################
+
+        // let fruits = ["apple", "mango", "banana", "orange"];
+        // let otherFruits = ["pineapple",...fruits, "guvava"];
+
+        // function printAll (...a)  // rest 
+        // {
+        //     console.log(a)
+        // }
+
+        // let allFruits = [...fruits, ...otherFruits];
+        // let newFruits = [...fruits]
+        // allFruits.push("Hello")
+
+        // printAll(...fruits) 
+        // printAll(...otherFruits) // spread
+        // console.log(...allFruits) // spread
+        // console.log(allFruits)
+        // console.log(newFruits)
+
+        // console.log(2**3**2)
+        // console.log(2**9)
+
+        // sort() method of Array #########################
+        // sort() method work only on with strings, not work with the numbers
+
+        // let name = ["Laxita", "Pratyush", "Aro", "Chandan"];
+        // let number = [1,2,3]
+
+        // // document.write(name + "<br><br>")
+        // // name.sort() 
+        // // document.write(name + "<br><br>")
+        // // name.reverse()
+        // // document.write(name + "<br><br>")
+
+        // // document.write(number + "<br><br>")
+        // // number.sort();
+        // // document.write(number + "<br><br>")
+
+        // let newNumber = number.splice(0, 2)
+        // number.splice(number.length, 0, "A")
+        // console.log(number)
+        // console.log(newNumber)
+
+        // let indexOF = name.indexOf("Aro")
+        // if(indexOF != -1) {
+        //     let newName = name.splice(indexOF, 1, "ARO")
+        //     console.log(name)
+        // } else {
+        //     console.log("data not match")
+        // }
+
+        // let ind = name.indexOf("Chandan");
+        // if(ind != -1) {
+        //     let updatedName = name.splice(ind, 1)
+        //     console.log(name)
+        // } else{
+        //     console.log("data not found")
+        // }
+
+
+        // map() method #######################################################
+
+        // let arr = [25, 36, 49, 64, 81];
+        // let arr1 = [1, 15, 9, 6, 25];
+
+        // arr.map((item, i, a) => {
+        //     console.log(item*2 + " index " + i + " " + a)
+        // })
+
+        // arr1.map((val, ind) => {
+        //     if(val >= 10) {
+        //         console.log(val)
+        //     } else {
+        //         console.log("These values are less then 10 " + val)
+        //     }
+        // })
+
+        // let arr = [25, 36, 49, 64, 81]; /// find squre root of eatch element of this array  
+
+        // let arrSqr = arr.map((element) => {
+        //     return Math.sqrt(element)
+        // });
+
+        // console.log(arrSqr)
+
+
+        // let num = [2, 3, 4, 6, 8];
+        // let z = num.map(val => {
+        //     return val * 2
+        // }).filter((val) => {
+        //     return val > 10
+        // })
+        // console.log(z)
+
+        // let num = [2, 3, 4, 6, 8];
+        // let z = num.map(val =>  val * 2).filter((val) => val > 10)
+        // console.log(z)
+
+        // let arr = [2, 3, 4, 6, 8];
+
+        // let sum = arr.reduce((accumulator, curElm, index, array) => {
+        //     return accumulator += curElm;
+        // })
+        // console.log(sum)
+
+        // let mlt = arr.reduce((acc, curElm) => {
+        //     return acc *= curElm;
+        // })
+
+        // console.log(mlt)
+
+        // let arr1 = [1, 2, 3, 4]
+
+        // let total = arr1.reduce ((acu, cv) => {
+        //     return acu += cv;
+        // }, 5)
+        // console.log(total)
+
+
+        //  Higher Order Function & Callback #########################################
+
+        const add = (a,b) => {     // Callback function
+            return a+b
+        }
+        const sub = (a,b) => {     // Callback function
+            return a-b
+        }
+        const mlt = (a,b) => {    // Callback function
+            return a*b
+        }
+
+        const calculate = (num1, num2, operator) => {      // Higher Order Function  
+            return operator(num1, num2);
+        }
+
+        console.log(calculate(4,5, mlt))   // Higher Order Function 
+        
+
+        
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="randomNum()">Random</button> -->
+
+    <!-- <input type="text" id="input">
+    <button onclick="addData()">Add</button> -->
+
+
+    <script>
+        
+        // function randomNum () {
+        //     let inpVal = prompt("Enter a Number in the range of 1 - 100");
+        //     let ranNum = Math.random()*100+1
+        //     if(inpVal === ~~ranNum) {
+        //         console.log("You Won")
+        //     } else {
+        //         console.log("Better Luck next Time")
+        //     }
+        //      console.log(~~ranNum)
+        // }
+        
+        // randomNum()
+
+        // let a = 6;
+        // let b = 7;
+
+        // b = b-a;  //1
+        // a = b + a;  //7
+
+        // b = a - b
+        // console.log("value of a = " + a)
+        // console.log("value of b = " + b)
+
+        // let year = 2024
+        // if(year % 4 ===0) {
+        //     if(year %100 ===0) {
+        //         if(year %400 ===0) {
+        //             console.log("given year is a leep year✌✌")
+        //         } else {
+        //             console.log("Not a Leep year")
+        //         }
+        //     } else {
+        //             console.log("given year is a leep year✌✌")
+        //         }
+        // }else {
+        //             console.log("Not a Leep year")
+        //         }
+
+        // console.log(year)
+
+
+                // ########### Array Methods ////////////////////////////////////
+
+
+        // let arr = ["hello", "This", "is", "your", "new", "home"]
+
+        // for (let i = 0; i<arr.length; i++) {
+        //     console.log(arr[i])
+        // }
+
+        // for(let i in arr) {
+        //     console.log("for in values: " + i)
+        // }
+        // for(let i of arr) {
+        //     console.log("for of values: " + i)
+        // }
+
+        // forEach() 
+
+        // arr.forEach((item, i, arr) => {
+        //     console.log(item, i, arr)
+        // })
+
+        // let arr2 = [1, 2, 3, 4, 5]
+
+        // arr2.forEach((item) => {
+        //     return item * 10 
+        // })
+        // console.log(arr2)
+
+
+                  //       ########### Searching and Filter in an Array //////////
+
+        // let ar = ["hello", "This", "is", "your", "new", "home"]
+        // let num = [2, 5, 8, 4, 9, 1]
+
+        // console.log(ar.indexOf("is"))
+        // console.log(num.indexOf())
+
+
+        // ###################  All Array Methods ///////////////////////
+
+        // let arr = ["JavScript", "React", "Angular"]
+
+        // console.log(arr.length)
+
+        // arr.push("Next js")
+        // arr.unshift("Netive")
+        // console.log(arr)
+
+        // arr.pop()
+        // arr.shift()
+        // console.log(arr)
+
+
+        // const employe = [
+        //     {
+        //         name: "Akansh",
+        //         payment: 500
+        //     },
+        //     {
+        //         name: "Shishu",
+        //         payment: 100
+        //     },
+        //     {
+        //         name: "shushel",
+        //         payment: 300
+        //     },
+        //     {
+        //         name: "Arvind",
+        //         payment: 1000
+        //     }
+        // ]
+
+        // console.log(employe)
+
+        // for ( let i = 0; i < employe.length; i++ ) {
+        //     employe[i].payment = employe[i].payment - 50
+        //     console.log(employe[i].name, employe[i].payment)
+        // }
+
+        // employe.map((item) => {
+        //     item.payment = item.payment-20
+        //     console.log(item.name, item.payment)
+        // })
+
+        // for(let emp of employe) {
+        //     emp.payment = emp.payment + 20000
+        //     console.log(emp.payment)
+        // }
+
+
+        // const student = [
+        //     {
+        //         name: "Laxita",
+        //         marks: 90
+        //     },
+        //     {
+        //         name: "Aro",
+        //         marks: 60
+        //     },
+        //     {
+        //         name: "Pratush",
+        //         marks: 70
+        //     }
+        //     ,
+        //     {
+        //         name: "Ramesh",
+        //         marks: 35
+        //     },
+        //     {
+        //         name: "Shuresh",
+        //         marks: 38
+        //     }
+        // ]
+
+        // const failed = student.filter((item) => {
+
+        //     return item.marks < 45;
+            // if(item.marks < 45){
+            //     return true
+            // } else {
+            //     return false
+            // }
+        // })
+
+        // console.log(failed)
+
+        // const numArr = [50, 40, 30, 20, 10];
+
+        // const nmt = numArr.reduce((acc, num) => {
+        //     acc += num
+        //     return acc
+        // })
+
+        // console.log(nmt)
+
+        // let total = 0;
+        // numArr.map((nm) => {
+        //     total = total + nm
+        //     return total
+        // })
+        // console.log(total)
+        
+        // let total = 0;
+        // numArr.forEach((num) => {
+        //      total += num
+            
+        // })
+        //  console.log(total)
+
+
+                //   IndexOF() method  ////
+        // const arr = [50, 40, 30, 20, 10];
+
+        // console.log(arr.includes(40))
+        // console.log(arr.indexOf(40))   
+        
+
+                //   Sort() method  ////
+        // const names = ["Ravi", "Kishan", "Vijay", "Chandan", "Abhinash"];
+        // names.sort();
+
+        // console.log(names)
+
+
+                //Splice() method   /////
+            // const names = ["Ravi", "Kishan", "Vijay", "Chandan", "Abhinash"];
+            // let a= names.indexOf("Chandan")
+            // names.splice(a, 1)
+            // console.log(names, a)
+
+
+
+
+
+            // Sprad Operator And Reat Operator //###################################################
+
+            // sprad : unpakes elements.  [], {}
+            // Rest  : pakes elements.  
+
+            // ...sprad
+            // const numbers = [1, 2, 3] 
+            //  copy an array useing sprad operator
+            // const newNumners = [...numbers]
+            // console.log(newNumners)
+
+            // const arr1 = [1, 2, 3]
+            // const arr2 = [4, 5, 6] 
+            // Marge arrays useing sprad operator
+            // console.log([0, ...arr1, ...arr2, 7, 8, 9])
+
+            
+            // sparad whit string /////////////
+            // const str = "Haldwani";
+            // console.log([...str])
+
+
+            // sprad opretor in object ////
+            // const obj = {
+            //     id: 1,
+            //     account: Date.now(),
+            //     name: "Ambani"
+            // }
+            // const newobj = {
+            //     ...obj,
+            //     address: "Noida"
+            // }
+            // console.log(newobj)
+
+
+            // ...Rest 
+            
+            // function sum (...nums)  // ...rest
+            // {    
+            //     console.log(nums)
+            //     let result = 0;
+            //     for(let i of nums) {
+            //         result += i
+            //     }
+            //     console.log(result)
+            // }
+
+            // const elm = [4,2,7,8,3,8,1]
+
+            // sum( ...elm )  // ...spread
+
+            // function sum (num1, num2, ...nums)  // ...rest
+            // {    
+            //     console.log(nums)
+            //     let result = 0;
+            //     for(let i of nums) {
+            //         result += i
+            //     }
+            //     console.log(result)
+            // }
+
+            // sum( 4,2,7,8 )  // ...spread
+
+            // const elm = [4,2,7,8,3,8,1]
+
+            // console.log(Math.max(...elm))
+            
+
+        // const user = {
+        //     name: "Laxita",
+        //     age: 3,
+        //     city: "Haldwani"
+        // }
+
+        // const {name, ...detail} = user
+        // console.log(name, detail)
+
+
+
+        //   ############ Perform CURD useing Array ####### ///////////////////////
+
+        // const name = ["Sachin", "Gambher", "Virat"]
+
+        
+        // function addData () {
+        //     const inp = document.getElementById("input").value
+        //     name.push(inp)
+        //     console.log(name)
+        // }
+
+
+        // console.log(name)
+
+
+        // const arr = [1, 2, 3, 4, 5]
+        //     let a = 0
+        // for(let num of arr) {
+        //     if(num % 2 !== 0) {
+        //         console.log( 3)
+        //     } 
+        //     if(num % 2 ===0) {
+        //         console.log( 1)
+        //     }
+        // }
+
+        // const arr = [1, 2, 3, 4, 5]
+
+        // let newArr = arr.map((item) => {
+            
+        //     if(item % 2 ===0) {
+        //         return 1
+        //     }
+        //     if(item === 5) {
+        //         return 5
+        //     } 
+        //     if(item % 2 !== 0) {
+        //         return 3
+        //     } 
+            
+        // }).reduce((acc, val) => {
+        //    return acc + val
+        // })
+
+        // console.log(newArr)
+
+
+        const arr = [1, 2, 3, 4, 5]
+
+        let newArr = arr.map((item) => {  
+            if(item % 2 ===0) {
+                return 1
+            }
+            if(item === 5) {
+                return 5
+            } 
+            if(item % 2 !== 0) {
+                return 3
+            } 
+            
+        }).reduce((acc, val) => {
+           return acc + val
+        })
+
+        console.log(newArr)
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

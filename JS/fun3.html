@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="account" >
+        <input id="costomerNmae" type="text" placeholder="Costomer Name">
+        <input id="abalance" type="text" placeholder="Initial balance">
+        <button>Create Account</button>
+    </form>
+    
+</body>
+<script>   
+// Advance Javascript########
+
+    
+    // function BankAccount( costomerName, balance = 0) {
+    //     this.costomerName = costomerName;
+    //     this.accountNumnber = Date.now();
+    //     this.balance =  balance;
+
+    //     this.deposit = function (amount) {
+    //         this.balance += amount
+    //     }
+
+    //     this.widrow = amount => this.balance -= amount 
+    // }
+
+//   let rakesh = new BankAccount("Rakesh Singh", 1000)
+//   let jon = new BankAccount("Jon")
+
+//   rakesh.deposit(2000)
+//   jon.deposit(4000)
+//   jon.widrow(3000)
+
+//   console.log(rakesh)
+//   console.log(jon)
+
+
+const accounts = [];
+ const accountForm = document.querySelector('#account')
+ const costomerName = document.querySelector('#costomerNmae')
+ const balance = document.querySelector('#abalance')
+
+
+ function BankAccount( costomerName, balance = 0) {
+        this.costomerName = costomerName;
+        this.accountNumnber = Date.now();
+        this.balance =  balance;
+
+        this.deposit = function (amount) {
+            this.balance += amount
+        }
+
+        this.widrow = amount => this.balance -= amount 
+    }
+
+
+ accountForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    const account = new BankAccount(costomerName.value, balance.value)
+    accounts.push(account)
+
+    console.log(accounts)
+
+ })
+
+
+</script>
+</html>
